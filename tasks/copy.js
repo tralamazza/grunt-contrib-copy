@@ -11,14 +11,13 @@ module.exports = function(grunt) {
   'use strict';
 
   var path = require('path');
-  var _ = require('underscore');
 
   // TODO: ditch this when grunt v0.4 is released
   grunt.util = grunt.util || grunt.utils;
+  var _ = grunt.util._;
 
   grunt.registerMultiTask('copy', 'Copy files.', function() {
 
-    var _ = grunt.util._;
     var kindOf = grunt.util.kindOf;
     var helpers = require('grunt-contrib-lib').init(grunt);
 
